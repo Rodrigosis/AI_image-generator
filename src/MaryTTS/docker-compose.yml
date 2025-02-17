@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  marytts:
+    build: .
+    container_name: marytts
+    ports:
+      - "59125:59125"
+    restart: unless-stopped
